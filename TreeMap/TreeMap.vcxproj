@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{E4A7FFB4-DAE9-442E-BC5A-6ACB987682E5}</ProjectGuid>
+    <ProjectGuid>{70303D7A-B254-48BD-BF5E-EC4C3E66587D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>mapscomparison</RootNamespace>
+    <RootNamespace>TreeMap</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -151,22 +151,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\HashMap\HashMap\my_tests.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="TreeMap.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\HashMap\HashMap\my_tests.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\HashMap\HashMap\HashMap.vcxproj">
-      <Project>{272e9a6d-cd0e-4b8f-8819-2a0ea7cac104}</Project>
-    </ProjectReference>
+    <ClCompile Include="TreeMap.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
